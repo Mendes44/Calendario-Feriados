@@ -1,4 +1,5 @@
-//Camada de Dados
+// Camada de dados: concentra a lista de feriados usada pelo restante da aplicacao.
+// As datas estao no formato MM/DD porque o JavaScript interpreta esse formato ao criar datas com new Date().
 const feriadosNacionais = [
   { nome: 'Confraternização universal', data: '01/01' },
   { nome: 'Tiradentes', data: '04/21' },
@@ -11,4 +12,5 @@ const feriadosNacionais = [
   { nome: 'Natal', data: '12/25' },
 ];
 
+// Exporta a lista para que a camada de servico possa consultar os feriados.
 export default feriadosNacionais;
