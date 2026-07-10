@@ -5,8 +5,8 @@ function imprimeFeriados (feriadosFiltro){
         const diaDaSemana = feriado.diaDaSemana;
         const dataFeriado = feriado.data;
 
-        console.log(`${nome} caira em: ${diaDaSemana}, ${dataFeriado}`);
-        
+        console.log('::::::::::::::::::::::::::::::::::::::::::::::::::::');
+        console.log(`${nome} Sera: ${diaDaSemana}, Data:${dataFeriado}`);
     });
 
 };

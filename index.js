@@ -6,7 +6,7 @@ let data = new Date();
 data = data.getFullYear();
 let numeroFeriados = 3;
 
-console.log(`:::Proximos Feriados do Ano de ${data}:::`);
+console.log(`       :::Proximos Feriados do Ano de ${data}:::  \n   `);
 
 let proximosFeriados = retornaProximosFeriados(numeroFeriados);
 imprimeFeriados(proximosFeriados);
