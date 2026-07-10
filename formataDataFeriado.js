@@ -5,7 +5,7 @@ import { filtraFeriados } from "./filtros.js";
 
 //Aqui estou buscando o dia e usando como indice para pegar o nome da semana no array que crei.
 export function formataDiaSemana (dataFeriado){
-    let diaDaSemana = ['Segunda', 'Terca', 'Quarta', 'Quinta', 'Sexta', 'Sabado','Domingo'];
+    let diaDaSemana = ['Domingo', 'Segunda', 'Terca', 'Quarta', 'Quinta', 'Sexta', 'Sabado'];
     return diaDaSemana[dataFeriado.getDay()];
 }
 
