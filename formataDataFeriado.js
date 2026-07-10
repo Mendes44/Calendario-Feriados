@@ -9,7 +9,13 @@ export function formataDiaSemana (dataFeriado){
     return diaDaSemana[dataFeriado.getDay()];
 }
 
-export function formataDataFeriado (){
-    
+export function formataDataFeriado (dataFeriado){
+    const diaFeriado = dataFeriado.getDate();
+    const mesFeriado = dataFeriado.getMonth();
+    const anoFeriado = dataFeriado.getFullYear();
+
+    const dataExibicao = diaFeriado + '/' + mesFeriado + '/' + anoFeriado;
+
+    return dataExibicao;
 }
 
