@@ -15,6 +15,10 @@ O projeto esta separado em camadas para deixar cada arquivo com uma responsabili
 - `retornaFeriado.js`: junta os dados, filtros e formatadores para devolver uma lista pronta para exibicao.
 - `imprimeFeriado.js`: mostra os feriados no terminal.
 
+## Arquitetura em camadas
+
+![Diagrama das camadas da aplicacao](assets/camadas-aplicacao.png)
+
 ## Fluxo do programa
 
 1. O usuario informa quantos feriados deseja visualizar.
