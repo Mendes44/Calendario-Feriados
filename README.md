@@ -6,14 +6,32 @@ O programa pergunta ao usuario quantos feriados ele deseja consultar e exibe no 
 
 ## Como funciona
 
-O projeto esta separado em camadas para deixar cada arquivo com uma responsabilidade clara:
+O projeto esta separado em pastas por camadas para deixar cada arquivo com uma responsabilidade clara:
 
 - `index.js`: arquivo principal do programa. Ele recebe a entrada do usuario, chama a camada de servico e envia o resultado para impressao.
-- `dataFeriado.js`: guarda a lista de feriados nacionais fixos.
-- `filtros.js`: calcula quais feriados estao mais proximos da data atual.
-- `formataDataFeriado.js`: formata a data e descobre o dia da semana de cada feriado.
-- `retornaFeriado.js`: junta os dados, filtros e formatadores para devolver uma lista pronta para exibicao.
-- `imprimeFeriado.js`: mostra os feriados no terminal.
+- `dados/dataFeriado.js`: guarda a lista de feriados nacionais fixos.
+- `servico/filtros.js`: calcula quais feriados estao mais proximos da data atual.
+- `servico/formataDataFeriado.js`: formata a data e descobre o dia da semana de cada feriado.
+- `servico/retornaFeriado.js`: junta os dados, filtros e formatadores para devolver uma lista pronta para exibicao.
+- `exibicao/imprimeFeriado.js`: mostra os feriados no terminal.
+
+## Estrutura do projeto
+
+```txt
+calendarioFeriado/
+|-- assets/
+|   `-- camadas-aplicacao.png
+|-- dados/
+|   `-- dataFeriado.js
+|-- exibicao/
+|   `-- imprimeFeriado.js
+|-- servico/
+|   |-- filtros.js
+|   |-- formataDataFeriado.js
+|   `-- retornaFeriado.js
+|-- index.js
+`-- README.md
+```
 
 ## Arquitetura em camadas
 
@@ -23,14 +41,14 @@ O projeto esta separado em camadas para deixar cada arquivo com uma responsabili
 
 1. O usuario informa quantos feriados deseja visualizar.
 2. O `index.js` chama a funcao `retornaProximosFeriados`.
-3. A funcao busca os feriados cadastrados em `dataFeriado.js`.
-4. Os feriados sao filtrados em `filtros.js`, considerando a data atual.
+3. A funcao busca os feriados cadastrados em `dados/dataFeriado.js`.
+4. Os feriados sao filtrados em `servico/filtros.js`, considerando a data atual.
 5. Cada feriado recebe o dia da semana e uma data formatada.
-6. O resultado final e impresso no terminal.
+6. O resultado final e enviado para `exibicao/imprimeFeriado.js` e impresso no terminal.
 
 ## Formato das datas
 
-No arquivo `dataFeriado.js`, as datas estao no formato `MM/DD`.
+No arquivo `dados/dataFeriado.js`, as datas estao no formato `MM/DD`.
 
 Exemplo:
 
