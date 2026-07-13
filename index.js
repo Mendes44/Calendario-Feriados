@@ -1,6 +1,6 @@
 // Camada de exibicao: ponto de entrada do programa.
-import { retornaProximosFeriados } from "./retornaFeriado.js";
-import imprimeFeriados from "./imprimeFeriado.js";
+import { retornaProximosFeriados } from "./servico/retornaFeriado.js";
+import imprimeFeriados from "./exibicao/imprimeFeriado.js";
 import entradaDados from 'readline-sync'
 
 // Cria uma data atual apenas para descobrir o ano que sera mostrado na pergunta.

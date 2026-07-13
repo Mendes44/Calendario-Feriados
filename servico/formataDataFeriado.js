@@ -1,7 +1,5 @@
-// Subcamada responsavel por formatar as datas dos feriados para exibicao.
+﻿// Subcamada responsavel por formatar as datas dos feriados para exibicao.
 // Lembrando: ao criar datas por string, o JavaScript trabalha melhor com o formato americano MM/DD.
-import feriadosNacionais from "./dataFeriado.js";
-import { filtraFeriados } from "./filtros.js";
 
 // Recebe uma data e retorna o nome do dia da semana correspondente.
 export function formataDiaSemana (dataFeriado){
@@ -28,3 +26,4 @@ export function formataDataFeriado (dataFeriado){
 
     return dataExibicao;
 }
+

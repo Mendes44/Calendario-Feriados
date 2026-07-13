@@ -1,5 +1,5 @@
 // Camada de servico: prepara os dados que serao usados pela camada de exibicao.
-import feriadosNacionais from "./dataFeriado.js"; // Colecao de dados com os feriados cadastrados.
+import feriadosNacionais from "../dados/dataFeriado.js"; // Colecao de dados com os feriados cadastrados.
 import { filtraFeriados } from "./filtros.js";
 import { formataDiaSemana, formataDataFeriado } from "./formataDataFeriado.js";
 
